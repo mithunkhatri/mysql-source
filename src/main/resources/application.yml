@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: mysql-migration
+      kafka:
+        binder:
+          configuration:
+            key:
+              serializer: org.apache.kafka.common.serialization.StringSerializer
