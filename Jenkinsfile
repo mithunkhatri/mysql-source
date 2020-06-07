@@ -7,11 +7,5 @@ pipeline {
       }
     }
 
-    stage('') {
-      steps {
-        emailext(subject: 'mysql-source build success', body: 'build has been successfully completed', to: 'mithunkhatri@gmail.com')
-      }
-    }
-
   }
 }
